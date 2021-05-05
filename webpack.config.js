@@ -9,6 +9,7 @@ const browserConfig = {
   devServer: {
     contentBase: './public',
     open: true,
+    historyApiFallback: true,
   },
   entry: path.resolve(__dirname, 'src', 'browser', 'index.js'),
   output: {
