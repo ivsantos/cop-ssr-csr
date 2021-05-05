@@ -10,7 +10,7 @@
   },
   "scripts": {
     "build": "webpack --mode production",
-    "start": "node server.js",
+    "start": "node index.js",
     "dev": "webpack-dev-server -d -w"
   },
   "babel": {
