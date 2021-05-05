@@ -5,24 +5,17 @@ const CatGrid = ({ fetchInitialData }) => {
   const [cats, setCats] = useState(null);
 
   const [loading, setLoading] = useState(!cats);
-  // const fetchNewCats = useRef(!cats);
 
   const { tag } = useParams();
 
   useEffect(() => {
-    // if (fetchNewCats.current === true) {
       setLoading(true);
 
       fetchInitialData(tag)
         .then((data) => {
-          setTimeout(() => {
-            setCats(data);
-            setLoading(false);
-          }, 1000)
+          setCats(data);
+          setLoading(false);
         });
-    // } else {
-    //   fetchNewCats.current = true;
-    // }
   }, [tag]);
 
   if (loading === true) {
