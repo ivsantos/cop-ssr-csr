@@ -5,9 +5,12 @@
   "license": "UNLICENSED",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server -d -w"
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server -d -w"
   },
   "babel": {
     "presets": [

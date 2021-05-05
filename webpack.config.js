@@ -6,7 +6,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 const browserConfig = {
-  mode: "production",
   devServer: {
     contentBase: './public',
     open: true,
